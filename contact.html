@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - FurnishMe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-3">
+                <div class="logo">FurnishMe</div>
+                
+                <ul class="nav-links d-none d-lg-flex">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+                
+                <div class="header-icons">
+                    <div class="search-container">
+                        <i class="bi bi-search" id="search-icon"></i>
+                        <div class="search-bar" id="search-bar">
+                            <input type="text" placeholder="Search here...">
+                        </div>
+                    </div>
+                    <i class="bi bi-person" id="user-icon"></i>
+                    <i class="bi bi-cart3" id="cart-icon"></i>
+                    <span class="cart-count">0</span>
+                    <i class="bi bi-list d-lg-none" id="mobile-menu-btn"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Toggle Menu -->
+    <div class="toggle-menu-overlay" id="toggle-menu-overlay"></div>
+    <div class="toggle-menu" id="toggle-menu">
+        <div class="toggle-menu-header">
+            <h3>Menu</h3>
+            <i class="bi bi-x toggle-menu-close" id="toggle-menu-close"></i>
+        </div>
+        <ul class="toggle-menu-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="shop.html" class="nav-link">Shop</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="page-section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact-form">
+                        <h3>Get In Touch</h3>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label>Your Name</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Your Number</label>
+                                <input type="tel" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Your Email</label>
+                                <input type="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Your Message</label>
+                                <textarea class="form-control" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247830.4816617536!2d120.64402560000001!3d13.7174811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd7776a5b8a6c9%3A0x7c2b1c8e7c7c7c7c!2sMabini%2C%20Batangas%2C%20Philippines!5e0!3m2!1sen!2sph!4v1647856789012!5m2!1sen!2sph" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    
+                    <div class="contact-info mt-4">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="info-item">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <h4>Address</h4>
+                                    <p>Mabini, Batangas, Philippines</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="info-item">
+                                    <i class="bi bi-telephone"></i>
+                                    <h4>Phone</h4>
+                                    <p>+63 912 345 6789</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="info-item">
+                                    <i class="bi bi-envelope"></i>
+                                    <h4>Email</h4>
+                                    <p>info@furnishme.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h3>Extra Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">My Order</a></li>
+                        <li><a href="#">My Wishlist</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Terms Of User</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h3>Follow Us</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="bi bi-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="bi bi-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="bi bi-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe For Latest Updates</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="enter your email">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>Created By Code With Aarzoo | All Rights Reserved!</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal-overlay" id="cart-modal-overlay"></div>
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-modal-header">
+            <h3>Your Cart</h3>
+            <i class="bi bi-x cart-modal-close" id="cart-modal-close"></i>
+        </div>
+        
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be generated by JavaScript -->
+        </div>
+        
+        <div class="cart-total">
+            <span>Total:</span>
+            <span id="cart-total-price">$0.00</span>
+        </div>
+        
+        <button class="checkout-btn" id="checkout-btn">Checkout Cart</button>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="login-modal-overlay" id="login-modal-overlay"></div>
+    <div class="login-modal" id="login-modal">
+        <div class="login-modal-header">
+            <h3>Login Form</h3>
+            <i class="bi bi-x login-modal-close" id="login-modal-close"></i>
+        </div>
+        
+        <form id="login-form">
+            <div class="form-group">
+                <label>enter your email</label>
+                <input type="email" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+                <label>enter your password</label>
+                <input type="password" class="form-control" required>
+            </div>
+            
+            <div class="remember-me">
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember Me</label>
+            </div>
+            
+            <button type="submit" class="btn-primary" style="width: 100%;">Login Now</button>
+            
+            <div class="login-links">
+                <a href="#" id="forgot-password">Forget Password? Click Here</a>
+                <a href="#" id="create-account">Don't Have An Account? Create Now</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

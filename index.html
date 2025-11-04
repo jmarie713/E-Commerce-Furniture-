@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FurnishMe - Modern Furniture Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-3">
+                <div class="logo">FurnishMe</div>
+                
+                <ul class="nav-links d-none d-lg-flex">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="header-icons">
+                    <div class="search-container">
+                        <i class="bi bi-search" id="search-icon"></i>
+                        <div class="search-bar" id="search-bar">
+                            <input type="text" placeholder="Search here...">
+                        </div>
+                    </div>
+                    <i class="bi bi-person" id="user-icon"></i>
+                    <i class="bi bi-cart3" id="cart-icon"></i>
+                    <span class="cart-count">0</span>
+                    <i class="bi bi-list d-lg-none" id="mobile-menu-btn"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Toggle Menu - Updated to match screenshot -->
+    <div class="toggle-menu-overlay" id="toggle-menu-overlay"></div>
+    <div class="toggle-menu" id="toggle-menu">
+        <div class="toggle-menu-header">
+            <h3>Menu</h3>
+            <i class="bi bi-x toggle-menu-close" id="toggle-menu-close"></i>
+        </div>
+        <ul class="toggle-menu-links">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="shop.html" class="nav-link">Shop</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        
+        <div class="toggle-menu-divider"></div>
+        
+        <div class="toggle-menu-content">
+            <h4>New Arrivals</h4>
+            <h3>Flexible Chair</h3>
+            <p>Lorem Ipsum, Color Sit Amet Consectetur Adipiscing Elit. Veto, Magni Harum Cupiditate Perferendia Expedia Parisunt?</p>
+            <button class="btn-primary">Shop Now</button>
+        </div>
+    </div>
+
+    <!-- Hero Slider - Updated content to match screenshot -->
+    <section class="slider">
+        <div class="slides">
+            <!-- Slide 1: Flexible Chair -->
+            <div class="slide slide-1">
+                <div class="slide-content">
+                    <div class="slide-text">
+                        <h4>New Arrivals</h4>
+                        <h1>Flexible Chair</h1>
+                        <p>Lorem Ipsum, Color Sit Amet Consectetur Adipiscing Elit. Veto, Magni Harum Cupiditate Perferendia Expedia Parisunt?</p>
+                        <button class="btn-primary">Shop Now</button>
+                    </div>
+                    <div class="slide-image">
+                        <div class="image-placeholder">Flexible Chair Image</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 2: United Offer -->
+            <div class="slide slide-2">
+                <div class="slide-content">
+                    <div class="slide-text">
+                        <h4>United Offer</h4>
+                        <h1>Upto 50% Off</h1>
+                        <p>Don't miss our special offers on selected furniture items. Limited time only!</p>
+                        <button class="btn-primary">Shop Now</button>
+                    </div>
+                    <div class="slide-image">
+                        <div class="image-placeholder">Special Offer Image</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 3: Modern Design -->
+            <div class="slide slide-3">
+                <div class="slide-content">
+                    <div class="slide-text">
+                        <h4>Modern Design</h4>
+                        <h1>Elegant Furniture</h1>
+                        <p>Transform your space with our collection of modern and elegant furniture pieces.</p>
+                        <button class="btn-primary">Shop Now</button>
+                    </div>
+                    <div class="slide-image">
+                        <div class="image-placeholder">Elegant Furniture Image</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-nav">
+            <div class="slider-dot active" data-slide="0"></div>
+            <div class="slider-dot" data-slide="1"></div>
+            <div class="slider-dot" data-slide="2"></div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <h2 class="section-title">Our Products</h2>
+            <div class="product-grid" id="home-products">
+                <!-- Product cards will be generated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer - Updated to match screenshot exactly -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Extra Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">My Order</a></li>
+                        <li><a href="#">My Wishlist</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Terms Of User</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="bi bi-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="bi bi-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="bi bi-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe For Latest Updates</p>
+                    <div class="newsletter-form">
+                        <div class="newsletter-input-group">
+                            <input type="email" placeholder="enter your email">
+                            <button>subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>Created By Code With Aarzoo | All Rights Reserved!</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal-overlay" id="cart-modal-overlay"></div>
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-modal-header">
+            <h3>Your Cart</h3>
+            <i class="bi bi-x cart-modal-close" id="cart-modal-close"></i>
+        </div>
+        
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be generated by JavaScript -->
+        </div>
+        
+        <div class="cart-total">
+            <span>Total:</span>
+            <span id="cart-total-price">$0.00</span>
+        </div>
+        
+        <button class="checkout-btn" id="checkout-btn">Checkout Cart</button>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="login-modal-overlay" id="login-modal-overlay"></div>
+    <div class="login-modal" id="login-modal">
+        <div class="login-modal-header">
+            <h3>Login Form</h3>
+            <i class="bi bi-x login-modal-close" id="login-modal-close"></i>
+        </div>
+        
+        <form id="login-form">
+            <div class="form-group">
+                <label>enter your email</label>
+                <input type="email" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+                <label>enter your password</label>
+                <input type="password" class="form-control" required>
+            </div>
+            
+            <div class="remember-me">
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember Me</label>
+            </div>
+            
+            <button type="submit" class="btn-primary" style="width: 100%;">Login Now</button>
+            
+            <div class="login-links">
+                <a href="#" id="forgot-password">Forget Password? Click Here</a>
+                <a href="#" id="create-account">Don't Have An Account? Create Now</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
